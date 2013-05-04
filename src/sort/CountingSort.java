@@ -31,7 +31,7 @@ public class CountingSort extends Sort {
       }
       
       int z = 0;
-      for (int i = 0; i < maxValue; i++) {
+      for (int i = 0; i <= maxValue; i++) {
          while (count[i] > 0) {
             array[z] = i;
             z++;

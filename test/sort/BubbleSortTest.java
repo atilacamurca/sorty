@@ -34,7 +34,7 @@ public class BubbleSortTest {
       System.out.println("Bubble Sort: 10 elements in descending order.");
       BubbleSort instance = new BubbleSort(10, Order.desc);
       instance.sort();
-      assertEquals(instance.toString(), "1 2 3 4 5 6 7 8 9 10 ");
+      assertEquals("1 2 3 4 5 6 7 8 9 10 ", instance.toString());
       System.out.println(instance);
    }
 }

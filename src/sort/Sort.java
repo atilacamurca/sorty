@@ -44,17 +44,21 @@ public abstract class Sort {
       }
    }
    
+   public Sort(int array[]) {
+      this.array = array;
+   }
+   
    private void init(int size, Order order) {
       array = new int[size];
       switch (order) {
          case asc:
             for (int i = 1; i <= array.length; i++) {
-               array[i] = i;
+               array[i - 1] = i;
             }
             break;
          case desc:
-            for (int i = size; i > 0; i--) {
-               array[i - 1] = i;
+            for (int i = size, j = 1; i > 0; i--, j++) {
+               array[i - 1] = j;
             }
             break;
          default:

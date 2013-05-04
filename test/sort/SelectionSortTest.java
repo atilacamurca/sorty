@@ -34,7 +34,7 @@ public class SelectionSortTest {
       System.out.println("Selection Sort: 10 elements in descending order.");
       SelectionSort instance = new SelectionSort(10, Order.desc);
       instance.sort();
-      assertEquals(instance.toString(), "1 2 3 4 5 6 7 8 9 10 ");
+      assertEquals("1 2 3 4 5 6 7 8 9 10 ", instance.toString());
       System.out.println(instance);
    }
 }

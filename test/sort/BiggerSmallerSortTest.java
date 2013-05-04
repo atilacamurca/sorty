@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
  *
  * @author atila
  */
-public class QuickSortTest {
+public class BiggerSmallerSortTest {
    
-   public QuickSortTest() {
+   public BiggerSmallerSortTest() {
    }
    
    @BeforeClass
@@ -27,12 +27,12 @@ public class QuickSortTest {
    }
 
    /**
-    * Test of sort method, of class QuickSort.
+    * Test of sort method, of class BiggerSmallerSort.
     */
    @Test
    public void testSort() {
-      System.out.println("Quick Sort: 10 elements in descending order.");
-      QuickSort instance = new QuickSort(10, Order.desc);
+      System.out.println("Bigger Smaller Sort: 10 elements in descending order.");
+      BiggerSmallerSort instance = new BiggerSmallerSort(10, Order.desc);
       instance.sort();
       assertEquals("1 2 3 4 5 6 7 8 9 10 ", instance.toString());
       System.out.println(instance);
