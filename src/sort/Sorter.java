@@ -8,25 +8,26 @@ import java.io.FileReader;
  *
  * @author atila
  */
-public abstract class Sort {
+public abstract class Sorter {
    
-   public static final String ARRAY_FILE_100       = "array-file-100.txt";
-   public static final String ARRAY_FILE_1000      = "array-file-1000.txt";
-   public static final String ARRAY_FILE_10000     = "array-file-10000.txt";
-   public static final String ARRAY_FILE_100000    = "array-file-100000.txt";
-   public static final String ARRAY_FILE_1000000   = "array-file-1000000.txt";
+   public static final String ARRAY_FILE_10        = "files/array-file-10.txt";
+   public static final String ARRAY_FILE_100       = "files/array-file-100.txt";
+   public static final String ARRAY_FILE_1000      = "files/array-file-1000.txt";
+   public static final String ARRAY_FILE_10000     = "files/array-file-10000.txt";
+   public static final String ARRAY_FILE_100000    = "files/array-file-100000.txt";
+   //public static final String ARRAY_FILE_1000000   = "files/array-file-1000000.txt";
    
    protected int[] array;
    
-   public Sort(int size) {
+   public Sorter(int size) {
       init(size, Order.asc);
    }
    
-   public Sort(int size, Order order) {
+   public Sorter(int size, Order order) {
       init(size, order);
    }
    
-   public Sort(String filename) throws Exception {
+   public Sorter(String filename) throws Exception {
       try (BufferedReader reader = new BufferedReader(new FileReader(filename))){
          String line = reader.readLine();
          int size = Integer.parseInt(line);
@@ -44,7 +45,7 @@ public abstract class Sort {
       }
    }
    
-   public Sort(int array[]) {
+   public Sorter(int array[]) {
       this.array = array;
    }
    

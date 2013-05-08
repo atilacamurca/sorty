@@ -4,7 +4,7 @@ package sort;
  *
  * @author atila
  */
-public class CountingSort extends Sort {
+public class CountingSort extends Sorter {
 
    private int maxValue;
    

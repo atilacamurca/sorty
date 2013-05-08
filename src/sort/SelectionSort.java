@@ -4,7 +4,7 @@ package sort;
  *
  * @author atila
  */
-public class SelectionSort extends Sort {
+public class SelectionSort extends Sorter {
 
    public SelectionSort(int size) {
       super(size);

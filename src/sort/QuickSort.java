@@ -4,7 +4,7 @@ package sort;
  *
  * @author atila
  */
-public class QuickSort extends Sort {
+public class QuickSort extends Sorter {
 
    public QuickSort(int size) {
       super(size);

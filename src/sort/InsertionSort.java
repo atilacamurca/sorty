@@ -4,7 +4,7 @@ package sort;
  *
  * @author atila
  */
-public class InsertionSort extends Sort {
+public class InsertionSort extends Sorter {
 
    public InsertionSort(int size) {
       super(size);

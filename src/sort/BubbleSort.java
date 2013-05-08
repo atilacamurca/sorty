@@ -4,7 +4,7 @@ package sort;
  *
  * @author atila
  */
-public class BubbleSort extends Sort {
+public class BubbleSort extends Sorter {
 
    public BubbleSort(int size) {
       super(size);
