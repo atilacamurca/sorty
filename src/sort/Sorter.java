@@ -10,6 +10,7 @@ import java.io.FileReader;
  */
 public abstract class Sorter {
    
+   public static final String ARRAY_FILE          = "files/array-file-%d.txt";
    public static final String ARRAY_FILE_10        = "files/array-file-10.txt";
    public static final String ARRAY_FILE_100       = "files/array-file-100.txt";
    public static final String ARRAY_FILE_1000      = "files/array-file-1000.txt";

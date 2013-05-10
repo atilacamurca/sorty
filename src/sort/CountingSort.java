@@ -19,6 +19,7 @@ public class CountingSort extends Sorter {
    }
 
    public CountingSort(String filename, int maxValue) throws Exception {
+      // TODO: modificar método para pular linha 1 do arquivo.
       super(filename);
       this.maxValue = maxValue;
    }
