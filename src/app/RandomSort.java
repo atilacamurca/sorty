@@ -37,7 +37,7 @@ public class RandomSort {
             sorter = new QuickSort(filename);
             break;
          case 4:
-            sorter = new CountingSort(filename, size);
+            sorter = new CountingSort(filename);
             break;
          case 5:
             sorter = new BiggerSmallerSort(filename);

@@ -32,6 +32,8 @@ public class Main {
                new RandomSort(method, size);
                break;
             case "chart":
+               RenderChart chart = new RenderChart();
+               chart.caller(args);
                break;
             default:
                System.out.println("action not found.");

@@ -32,7 +32,7 @@ public class CountingSortTest {
    @Test
    public void testSort() {
       System.out.println("Counting Sort: 10 elements in descending order.");
-      CountingSort instance = new CountingSort(10, Order.desc, 10);
+      CountingSort instance = new CountingSort(10, Order.desc);
       instance.sort();
       assertEquals("1 2 3 4 5 6 7 8 9 10 ", instance.toString());
       System.out.println(instance);
