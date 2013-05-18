@@ -59,7 +59,7 @@ public class RenderChart extends Application {
       bc.setTitle("Algoritmos de Ordenação");
       bc.setAnimated(false);
 
-      Scene scene = new Scene(bc, 1200, 600);
+      Scene scene = new Scene(bc, 1024, 500);
       for (int i = initialAlg; i < finalAlg; i++) {
          bc.getData().add(getSeries(i));
       }
